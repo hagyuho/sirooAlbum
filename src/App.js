@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import "./App.css";
+import Gnb from "./component/global/Gnb";
+import Header from "./component/global/Header";
+import MainPage from "./pages/main";
+import Watch from './pages/watch';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header />
+      <Router basename="/">
+        <Gnb />
+        <div className="board" >
+          <Switch>
+            <Route exact path="/" component={MainPage} />
+            {/* <Route path="/hautecouture" component={hautecouture} />
+            <Route path="/passion" component={passion} />
+            <Route path="/highjewely" component={highjewely} />
+            <Route path="/finejewely" component={finejewely} /> */}
+            <Route path="/watch" component={Watch} />
+            {/* <Route path="/eyewear" component={eyewear} />
+            <Route path="/fragment" component={fragment} />
+            <Route path="/makeup" component={makeup} />
+            <Route path="/skincare" component={skincare} />
+            <Route path="/introduceChanel" component={introduceChanel} /> */}
+          </Switch>
+        </div>
+      </Router>
     </div>
   );
-}
+};
 
 export default App;
