@@ -7,6 +7,7 @@ const Header = () => {
   
   const headerStyle = {
     display: "flex",
+    flexDirection: "column",
     justifyContent: 'center',
   };
   const headerNameStyle = {
@@ -31,18 +32,15 @@ const Header = () => {
 
   return (
     <div className="header" style={headerStyle}>
-      <div>
-          숨겨진 메뉴 영ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ
-      </div>
       <div className="header-name" style={headerNameStyle}>
-        CHANEL
+        SIROO
       </div>
       <Box style={iconBoxStyle}>
       <BottomNavigation showLabels value={value} onChange={onChange}>
-        <BottomNavigationAction label="SearchIcon" />
-        <BottomNavigationAction label="MyPage" />
-        <BottomNavigationAction label="Star" />
-        <BottomNavigationAction label="shopping" />
+        <BottomNavigationAction label="Instagram" />
+        <BottomNavigationAction label="About Siroo" />
+        <BottomNavigationAction label="About Butler" />
+        <BottomNavigationAction label="ETC" />
       </BottomNavigation>
       </Box>
     </div>

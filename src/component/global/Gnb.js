@@ -16,17 +16,15 @@ const Gnb = () => {
           onChange={handleChange}
           aria-label="global-navigation-bar"
         >
-          <Tab component="a" label="메인화면" href="#/" />
-          <Tab component="a" label="오띄 꾸뛰르" href="#/hautecouture" />
-          <Tab component="a" label="패션" href="#/passion" />
-          <Tab component="a" label="하이 주얼리" href="#/highjewely" />
-          <Tab component="a" label="화인 주얼리" href="#/finejewely" />
-          <Tab component="a" label="워치" href="#/watch" />
-          <Tab component="a" label="아이웨어" href="#/eyewear" />
-          <Tab component="a" label="향수" href="#/fragment" />
-          <Tab component="a" label="메이크업" href="#/makeup" />
-          <Tab component="a" label="스킨케어" href="#/skincare" />
-          <Tab component="a" label="샤넬소개" href="#/introduceChanel" />
+          <Tab component="a" label="" href="#/" />
+          <Tab component="a" label="BABY" href="#/hautecouture" />
+          <Tab component="a" label="CUTE" href="#/passion" />
+          <Tab component="a" label="EDGE" href="#/highjewely" />
+          <Tab component="a" label="PLAYGROUND" href="#/finejewely" />
+          <Tab component="a" label="UGLY" href="#/watch" />
+          <Tab component="a" label="LAZY" href="#/eyewear" />
+          <Tab component="a" label="SLEEP" href="#/fragment" />
+          <Tab component="a" label="SUV" href="#/makeup" />
         </Tabs>
     </div>
   );
