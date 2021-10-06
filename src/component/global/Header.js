@@ -17,7 +17,6 @@ const Header = () => {
   };
 
   const iconBoxStyle = {
-    // marginLeft: "auto",
     alignSelf:'flex-end',
   }
 
@@ -28,16 +27,14 @@ const Header = () => {
     setValue(newValue);
   };
 
-
-
   return (
     <div className="header" style={headerStyle}>
-      <div className="header-name" style={headerNameStyle}>
-        SIROO
+      <div className="header-name" style={headerNameStyle} onClick={()=>window.location.href="http://localhost:3000/"}>
+        SIROO 
       </div>
       <Box style={iconBoxStyle}>
       <BottomNavigation showLabels value={value} onChange={onChange}>
-        <BottomNavigationAction label="Instagram" />
+        <BottomNavigationAction label="Instagram" onClick={()=>window.open("https://www.instagram.com/siroo_9092/")}/>
         <BottomNavigationAction label="About Siroo" />
         <BottomNavigationAction label="About Butler" />
         <BottomNavigationAction label="ETC" />

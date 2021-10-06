@@ -1,17 +1,17 @@
 import React from "react";
 import MainFrame from "../../component/main/MainFrame";
-import MainVideoFrame from "../../component/main/MainVideoFrame";
 
 const MainPage = () => {
   const contents = [
-    { name: "BABY", img: "media/babySiroo1.jpg", descrption:"이제 막 와서 꼬물거리다" },
-    { name: "CUTE", img: "media/babySiroo2.jpg", descrption:"하늘만 봐도 귀여웠던 시절" },
-    { name: "EDGE", img: "media/babySiroo3.jpg", descrption:"시크한 뽕주디" },
-    { name: "PLAYGROUND", img: "media/funSiroo1.jpg", descrption:"모든 곳이 그의 놀이터" },
-    { name: "UGLY", img: "media/funSiroo2.jpg", descrption:"빻음의 시작" },
-    { name: "LAZY", img: "media/sleepSiroo1.jpg", descrption:"귀찮은 자가 높이 올라간다" },
-    { name: "SLEEP", img: "media/sleepSiroo2.jpg", descrption:"자고 일어나고의 반복" },
-    { name: "SUV", img: "media/sleepSiroo3.jpg", descrption:"자동차로의 부활" },
+    { name: "ICECREAM", img: "media/icecreamSiroo.mp4", type:"video/mp4", descrption:"이제 막 와서 꼬물거리다" ,path:"/icecream" },
+    { name: "BABY", img: "media/babySiroo1.jpg", type:"img", descrption:"첫 만남" ,path:"/baby"},
+    { name: "CUTE", img: "media/babySiroo2.jpg", type:"img", descrption:"하늘만 봐도 귀여웠던 시절",path:"/cute" },
+    { name: "EDGE", img: "media/babySiroo3.jpg", type:"img", descrption:"시크한 뽕주디",path:"/edge" },
+    { name: "PLAYGROUND", img: "media/funSiroo1.jpg", type:"img", descrption:"모든 곳이 그의 놀이터",path:"/playground" },
+    { name: "UGLY", img: "media/funSiroo2.jpg", type:"img", descrption:"빻음의 시작" ,path:"/ugly"},
+    { name: "LAZY", img: "media/sleepSiroo1.jpg", type:"img", descrption:"귀찮은 자가 높이 올라간다" ,path:"/lazy"},
+    { name: "SLEEP", img: "media/sleepSiroo2.jpg", type:"img", descrption:"자고 일어나고의 반복",path:"/sleep" },
+    { name: "SUV", img: "media/sleepSiroo3.jpg", type:"img", descrption:"자동차로의 부활",path:"/suv" },
   ];
 
   const liStyle = {
@@ -20,7 +20,6 @@ const MainPage = () => {
 
   return (
     <div>
-      <MainVideoFrame/>
         {contents.map((item, index) => (
          <MainFrame style={liStyle} key={index} item={item}/>
         ))}

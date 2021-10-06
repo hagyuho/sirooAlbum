@@ -11,20 +11,20 @@ const Gnb = () => {
   return (
     <div>
         <Tabs
-          centered
+          variant="fullWidth"
           value={value}
           onChange={handleChange}
           aria-label="global-navigation-bar"
         >
-          <Tab component="a" label="" href="#/" />
-          <Tab component="a" label="BABY" href="#/hautecouture" />
-          <Tab component="a" label="CUTE" href="#/passion" />
-          <Tab component="a" label="EDGE" href="#/highjewely" />
-          <Tab component="a" label="PLAYGROUND" href="#/finejewely" />
-          <Tab component="a" label="UGLY" href="#/watch" />
-          <Tab component="a" label="LAZY" href="#/eyewear" />
-          <Tab component="a" label="SLEEP" href="#/fragment" />
-          <Tab component="a" label="SUV" href="#/makeup" />
+          <Tab component="a" label="MAIN" href="#/" />
+          <Tab component="a" label="BABY" href="#/baby" />
+          <Tab component="a" label="CUTE" href="#/cute" />
+          <Tab component="a" label="EDGE" href="#/edge" />
+          <Tab component="a" label="PLAYGROUND" href="#/playground" />
+          <Tab component="a" label="UGLY" href="#/ugly" />
+          <Tab component="a" label="LAZY" href="#/lazy" />
+          <Tab component="a" label="SLEEP" href="#/sleep" />
+          <Tab component="a" label="SUV" href="#/suv" />
         </Tabs>
     </div>
   );
