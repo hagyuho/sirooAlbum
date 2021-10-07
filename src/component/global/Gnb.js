@@ -17,7 +17,7 @@ const Gnb = () => {
           aria-label="global-navigation-bar"
         >
           <Tab component="a" label="MAIN" href="#/" />
-          <Tab component="a" label="BABY" href="#/baby" />
+          <Tab component="a" label="ROUTINE" href="#/routine" />
           <Tab component="a" label="CUTE" href="#/cute" />
           <Tab component="a" label="EDGE" href="#/edge" />
           <Tab component="a" label="PLAYGROUND" href="#/playground" />

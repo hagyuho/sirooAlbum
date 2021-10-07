@@ -4,7 +4,7 @@ import MainFrame from "../../component/main/MainFrame";
 const MainPage = () => {
   const contents = [
     { name: "ICECREAM", img: "media/icecreamSiroo.mp4", type:"video/mp4", descrption:"이제 막 와서 꼬물거리다" ,path:"/icecream" },
-    { name: "BABY", img: "media/babySiroo1.jpg", type:"img", descrption:"첫 만남" ,path:"/baby"},
+    { name: "ROUTINE", img: "media/babySiroo1.jpg", type:"img", descrption:"시루와 하루를 지내는 방법" ,path:"/routine"},
     { name: "CUTE", img: "media/babySiroo2.jpg", type:"img", descrption:"하늘만 봐도 귀여웠던 시절",path:"/cute" },
     { name: "EDGE", img: "media/babySiroo3.jpg", type:"img", descrption:"시크한 뽕주디",path:"/edge" },
     { name: "PLAYGROUND", img: "media/funSiroo1.jpg", type:"img", descrption:"모든 곳이 그의 놀이터",path:"/playground" },

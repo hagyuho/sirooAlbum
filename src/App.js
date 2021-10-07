@@ -3,7 +3,7 @@ import "./App.css";
 import Gnb from "./component/global/Gnb";
 import Header from "./component/global/Header";
 import MainPage from "./pages/main";
-import Watch from "./pages/watch";
+import Routine from "./pages/routine";
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
         <Gnb />
         <div className="board">
           <Switch>
-            <Route path="/baby" component={Watch} />
+            <Route path="/routine" component={Routine} />
             <Route exact path="/" component={MainPage} />
           </Switch>
         </div>
