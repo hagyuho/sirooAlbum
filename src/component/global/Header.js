@@ -6,6 +6,7 @@ const Header = () => {
   
   
   const headerStyle = {
+    height:'10vh',
     display: "flex",
     flexDirection: "column",
     justifyContent: 'center',
