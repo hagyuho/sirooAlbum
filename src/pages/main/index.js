@@ -1,7 +1,11 @@
 import React from "react";
-import MainFrame from "../../component/main/MainFrame";
+import DesktopFrame from "../../component/main/DesktopFrame";
+import { useMediaQuery } from "react-responsive";
+import MobileFrame from "../../component/main/MobileFrame";
+import TabletFrame from "../../component/main/TabletFrame";
 
 const MainPage = () => {
+
   const contents = [
     {
       name: "ICECREAM",
@@ -68,14 +72,26 @@ const MainPage = () => {
     },
   ];
 
+  const isMobile = useMediaQuery({
+    query: "(max-width: 768px)",
+  });
+
+  const isTablet = useMediaQuery({
+    query: "(max-width: 1024px)",
+  });
 
   return (
     <>
-        <div>
-          {contents.map((item, index) => (
-            <MainFrame  key={index} item={item} />
-          ))}
-        </div>
+      <div>
+        {contents.map((item, index) => (
+          isMobile
+            ?
+            <MobileFrame key={index} item={item} />
+            : isTablet
+              ? <TabletFrame key={index} item={item} />
+              : <DesktopFrame key={index} item={item} />
+        ))}
+      </div>
     </>
   );
 };

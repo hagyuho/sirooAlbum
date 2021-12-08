@@ -7,7 +7,34 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body .header{
+  color : white;
+}
+
+/* width 501~600 이하 */
+@media(max-width:600px){
+  body .header{
+    background-color: green;
+  }
+}
+/* width 500 이하 */
+@media(max-width:500px){
+  body .header{
+    background-color: red;
+  }
+}
+/* width 601 이상 */
+@media(min-width:601px){
+  body .header{
+    background-color: blue;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ul {
+  list-style: none;
 }

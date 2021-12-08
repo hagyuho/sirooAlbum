@@ -16,15 +16,10 @@ const Gnb = () => {
           onChange={handleChange}
           aria-label="global-navigation-bar"
         >
-          <Tab component="a" label="MAIN" href="#/" />
+          <Tab component="a" label="REACT 반응형 예제1" href="#/" />
+          <Tab component="a" label="REACT 반응형 예제2" href="#/2" />
+          <Tab component="a" label="REACT 반응형 예제3" href="#/3" />
           <Tab component="a" label="ROUTINE" href="#/routine" />
-          <Tab component="a" label="CUTE" href="#/cute" />
-          <Tab component="a" label="EDGE" href="#/edge" />
-          <Tab component="a" label="PLAYGROUND" href="#/playground" />
-          <Tab component="a" label="UGLY" href="#/ugly" />
-          <Tab component="a" label="LAZY" href="#/lazy" />
-          <Tab component="a" label="SLEEP" href="#/sleep" />
-          <Tab component="a" label="SUV" href="#/suv" />
         </Tabs>
     </div>
   );
