@@ -1,33 +1,22 @@
 import React from 'react';
 
-const DesktopFrame = (props) => {
+const MobileFrame = (props) => {
     const { item } = props;
     //grid css
-    console.log("rendered")
 
     const containerStyle = {
         display: "grid",
-        gridTemplateColumns: "2fr 1fr",
-        gridTemplateRows: "4fr 1fr",
+        gridTemplateRows: "2fr 1fr",
     }
     const divStyle1 = {
-        height: "72vh",
+        height: "60vh",
         alignSelf: "center",
         border: "1px solid black",
     };
-    const divStyle2 = {
-        display: "flex",
-        height: "72vh",
-        alignSelf: "center",
-        justifyContent: "center",
-        alignItems: "center",
-        border: "1px solid black",
-    };
+
     const divStyle3 = {
+        height: "30vh",
         display: "flex",
-        height: "18vh",
-        gridColumn: "1/3",
-        gridRow: "2",
         border: "1px solid black",
         justifyContent: "center",
         alignItems: "center",
@@ -51,7 +40,6 @@ const DesktopFrame = (props) => {
               <div className="main-frame-container" style={frameStyle}></div>
             )}
           </div>
-          <div style={divStyle2}>댓글기능 (구현중.....구현하진않을것) </div>
           <div style={divStyle3}>
             <ul>
               <li>{item.name}</li>
@@ -62,4 +50,4 @@ const DesktopFrame = (props) => {
       );
 };
 
-export default DesktopFrame;
+export default MobileFrame;

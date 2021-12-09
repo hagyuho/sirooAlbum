@@ -3,8 +3,9 @@ import DesktopFrame from "../../component/main/DesktopFrame";
 import { useMediaQuery } from "react-responsive";
 import MobileFrame from "../../component/main/MobileFrame";
 import TabletFrame from "../../component/main/TabletFrame";
+import MainFrame from "../../component/main2/MainFrame";
 
-const MainPage = () => {
+const MainPage2 = () => {
   const contents = [
     {
       name: "ICECREAM",
@@ -79,35 +80,15 @@ const MainPage = () => {
     query: "(max-width: 1024px)",
   });
 
-  // const windowFrame = useRef();
-  // const [windowFrameWidth, setWindowFrameWidth] = useState();
-  // useEffect(() => {
-  //   window.addEventListener('resize', resizing);
-  // }, []);
-
-  // const resizing = () =>{
-  //   setWindowFrameWidth( windowFrame.current.clientWidth);
-  // }
-
   return (
     <>
-      <div
-      // ref={windowFrame}
-      >
-        {contents.map((item, index) =>
-          // windowFrameWidth < 768 ?
-          isMobile ? (
-            <MobileFrame key={index} item={item} />
-          ) : isTablet ? (
-            // windowFrameWidth < 1024 ?
-            <TabletFrame key={index} item={item} />
-          ) : (
-            <DesktopFrame key={index} item={item} />
-          )
-        )}
+      <div>
+        {contents.map((item, index) => (
+          <MainFrame key={index} item={item} />
+        ))}
       </div>
     </>
   );
 };
 
-export default MainPage;
+export default MainPage2;
