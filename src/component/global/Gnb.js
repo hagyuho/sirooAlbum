@@ -16,9 +16,9 @@ const Gnb = () => {
           onChange={handleChange}
           aria-label="global-navigation-bar"
         >
-          <Tab component="a" label="REACT 반응형 예제1" href="#/" />
-          <Tab component="a" label="REACT 반응형 예제2" href="#/2" />
-          <Tab component="a" label="REACT 반응형 예제3" href="#/3" />
+          <Tab component="a" label="예제1" href="#/" />
+          <Tab component="a" label="예제2" href="#/2" />
+          <Tab component="a" label="예제3" href="#/3" />
           <Tab component="a" label="ROUTINE" href="#/routine" />
         </Tabs>
     </div>

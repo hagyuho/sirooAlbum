@@ -94,17 +94,19 @@ const MainPage = () => {
       <div
       // ref={windowFrame}
       >
-        {contents.map((item, index) =>
-          // windowFrameWidth < 768 ?
-          isMobile ? (
-            <MobileFrame key={index} item={item} />
-          ) : isTablet ? (
-            // windowFrameWidth < 1024 ?
-            <TabletFrame key={index} item={item} />
-          ) : (
-            <DesktopFrame key={index} item={item} />
-          )
-        )}
+        {isMobile
+          ? // windowFrameWidth < 768 ?
+            contents.map((item, index) => (
+              <MobileFrame key={index} item={item} />
+            ))
+          : isTablet
+          ? // windowFrameWidth < 1024 ?
+            contents.map((item, index) => (
+              <TabletFrame key={index} item={item} />
+            ))
+          : contents.map((item, index) => (
+              <DesktopFrame key={index} item={item} />
+            ))}
       </div>
     </>
   );

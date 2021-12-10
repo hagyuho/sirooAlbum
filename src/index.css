@@ -11,6 +11,12 @@ body .header{
   color : white;
 }
 
+@supports (display: grid) {
+  span {
+    display: none;
+  }
+}
+
 /* width 501~600 이하 */
 @media(max-width:600px){
   body .header{

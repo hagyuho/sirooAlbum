@@ -54,7 +54,7 @@ const TabletFrame = (props) => {
                     <li>{item.descrption}</li>
                 </ul>
             </div>
-            <div style={divStyle2}>댓글기능 (구현중.....구현하진않을것) </div>
+            <div style={divStyle2}>css 최신기술 test </div>
         </div>
     );
 };

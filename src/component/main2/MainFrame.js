@@ -18,7 +18,10 @@ const MainFrame = (props) => {
   let divStyle3;
 
   containerStyle = isMobile
-    ? { display: "grid", gridTemplateRows: "2fr 1fr" }
+    ? {
+        display: "grid",
+        gridTemplateRows: "2fr 1fr",
+      }
     : isTablet
     ? { display: "grid", gridTemplateRows: "3fr 1fr 1fr" }
     : {
@@ -28,7 +31,11 @@ const MainFrame = (props) => {
       };
 
   divStyle1 = isMobile
-    ? { height: "60vh", alignSelf: "center", border: "1px solid black" }
+    ? {
+        height: "60vh",
+        alignSelf: "center",
+        border: "1px solid black",
+      }
     : isTablet
     ? {
         height: "54vh",
@@ -93,22 +100,24 @@ const MainFrame = (props) => {
 
   return (
     <div style={containerStyle}>
-      <div style={divStyle1}>
-        {item.type === "video/mp4" ? (
-          <video width="100%" height="100%" autoPlay loop muted>
-            <source src={item.img} type="video/mp4"></source>
-          </video>
-        ) : (
-          <div className="main-frame-container" style={frameStyle}></div>
-        )}
-      </div>
-      <div style={divStyle2}>댓글기능 (구현중.....구현하진않을것) </div>
-      <div style={divStyle3}>
-        <ul>
-          <li>{item.name}</li>
-          <li>{item.descrption}</li>
-        </ul>
-      </div>
+        <div style={divStyle1}>
+          {item.type === "video/mp4" ? (
+            <video width="100%" height="100%" autoPlay loop muted>
+              <source src={item.img} type="video/mp4"></source>
+            </video>
+          ) : (
+            <div className="main-frame-container" style={frameStyle}></div>
+          )}
+        </div>
+        <div className="new-tec-test" style={divStyle2}>
+          <span>css 최신기술 test</span>
+        </div>
+        <div style={divStyle3}>
+          <ul>
+            <li>{item.name}</li>
+            <li>{item.descrption}</li>
+          </ul>
+        </div>
     </div>
   );
 };

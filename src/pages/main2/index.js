@@ -72,13 +72,6 @@ const MainPage2 = () => {
     },
   ];
 
-  const isMobile = useMediaQuery({
-    query: "(max-width: 768px)",
-  });
-
-  const isTablet = useMediaQuery({
-    query: "(max-width: 1024px)",
-  });
 
   return (
     <>

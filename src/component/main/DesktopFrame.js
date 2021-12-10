@@ -51,7 +51,7 @@ const DesktopFrame = (props) => {
               <div className="main-frame-container" style={frameStyle}></div>
             )}
           </div>
-          <div style={divStyle2}>댓글기능 (구현중.....구현하진않을것) </div>
+          <div style={divStyle2}>css 최신기술 test </div>
           <div style={divStyle3}>
             <ul>
               <li>{item.name}</li>

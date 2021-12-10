@@ -1,6 +1,4 @@
-import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
-import { Box } from "@material-ui/core";
-import React, { useState } from "react";
+import React from "react";
 import Gnb from "./Gnb";
 
 const Header = () => {
@@ -11,6 +9,8 @@ const Header = () => {
     display: "flex",
     flexDirection: "column",
     justifyContent: 'center',
+    position:"sticky",
+    top: 0,
   };
   const headerNameStyle = {
     fontSize: "2rem",
@@ -18,16 +18,6 @@ const Header = () => {
     alignSelf:"center",
   };
 
-  const iconBoxStyle = {
-    alignSelf:'flex-end',
-  }
-
-
-  const [value, setValue] = useState(0);
-
-  const onChange = (event, newValue) => {
-    setValue(newValue);
-  };
 
   return (
     <div className="header" style={headerStyle}>
